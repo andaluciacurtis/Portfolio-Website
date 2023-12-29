@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: rgb(169, 210, 248);
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: rgb(169, 210, 248);
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.outer-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(227, 252, 255);
+}
+
+.hero {
+  width: min(60%, 480px);
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.fish-banner {
+  position: absolute;
+  left: -90px;
+  top: -20px;
+  animation: lightRotate 2s ease-in-out infinite alternate;
+}
+
+.hero-text {
+  padding-left: 170px;
+}
+
+.button-container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button-container button {
+  border: none;
+  padding: 10px;
+  width: 20%;
+  border-radius: 15px;
+}
+
+.about-container {
+  background-color: white;
+  width: 100%;
+  padding: 40px;
+}
+
+.coding-container {
+  background-color: white;
+  width: 100%;
+  padding: 40px;
+}
+
+.art-container {
+  background-color: white;
+  width: 100%;
+  padding: 40px;
+}
+
+
+@keyframes lightRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
