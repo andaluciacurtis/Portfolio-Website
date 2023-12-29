@@ -11,7 +11,7 @@ html, body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 35px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: rgb(169, 210, 248);
 }
@@ -30,6 +30,11 @@ p {
   font-size: 18px;
 }
 
+img {
+  align-self: center;
+}
+
+
 .outer-container {
   height: 100%;
   width: 100%;
@@ -37,34 +42,32 @@ p {
   flex-direction: column;
   gap: 50px;
   align-items: center;
-  justify-content: center;
   background-color: rgb(227, 252, 255);
 }
 
 .hero {
-  width: min(60%, 480px);
+  width: min(80%, 480px);
   background-color: white;
   padding: 25px;
   border-radius: 15px;
   position: relative;
+  margin-top: 40px;
+}
+
+.hero-flex-container {
+  display: flex;
+  gap: 20px;
 }
 
 .fish-banner {
-  position: absolute;
-  left: -90px;
-  top: -20px;
   animation: lightRotate 2s ease-in-out infinite alternate;
-}
-
-.hero-text {
-  padding-left: 170px;
 }
 
 .button-container {
   display: flex;
   padding-top: 10px;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .button-container button {
@@ -99,5 +102,15 @@ p {
   }
   100% {
     transform: rotate(-5deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-flex-container {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
   }
 }
