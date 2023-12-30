@@ -47,10 +47,9 @@ a {
 }
 
 section {
+  background-color: rgb(227, 252, 255);
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   scroll-snap-align: start;
 }
 
@@ -74,40 +73,26 @@ nav {
   font-size: 23px;
 }
 
-
-.one {
-  background-color: rgb(227, 252, 255);
+#pageOne {
+  justify-content: center;
+  align-items: center;
 }
 
-.two {
-  background-color: rgb(227, 252, 255);
+#pageTwo {
+  justify-content: center;
+  align-items: center;
 }
 
-.three {
-  background-color: rgb(227, 252, 255);
+#pageThree {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.four {
-  background-color: rgb(227, 252, 255);
+#pageFour {
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hero {
   width: min(80%, 480px);
@@ -144,46 +129,59 @@ nav {
   border-radius: 15px;
 }
 
-.about-container {
-  background-color: white;
-  width: 100%;
-  padding: 40px;
-}
-
-.coding-container {
-  background-color: white;
-  width: 100%;
-  padding: 40px;
-}
-
-.art-container {
-  background-color: white;
-  width: 100%;
-  padding: 40px;
-}
-
-
-
+/* Project layout for Code and Art pages */
 .project {
   width: 125px;
   height: 125px;
+
   background-color: white;
+  transition: width 100ms, height 100ms;
+  cursor: pointer;
 }
 
 .selected {
   width: 150px;
   height: 150px;
+  animation: projectChosen 150ms;
 }
 
 .project-thumbnails {
   display: flex;
   gap: 20px;
   align-items: center;
+  height: 150px;
+}
+
+.project-description {
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
+@keyframes projectChosen {
+  0% {
+    width: 125px;
+    height: 125px;
+  }
 
-
+  90% {
+    width: 175px;
+    height: 175px;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 @keyframes lightRotate {
   0% {
