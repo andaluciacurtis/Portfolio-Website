@@ -10,61 +10,7 @@ html, body {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 
-
-.outer-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:20px;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-}
-
-
-.one {
-  background-color: rgb(227, 252, 255);
-}
-
-.two {
-  background-color: rgb(227, 252, 255);
-}
-
-.three {
-  background-color: rgb(227, 252, 255);
-}
-
-.four {
-  background-color: rgb(227, 252, 255);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* TEXT */
 h1 {
   font-size: 50px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -88,6 +34,78 @@ p {
 img {
   align-self: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+.outer-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 30px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  color: rgb(169, 210, 248);
+  font-size: 23px;
+}
+
+
+.one {
+  background-color: rgb(227, 252, 255);
+}
+
+.two {
+  background-color: rgb(227, 252, 255);
+}
+
+.three {
+  background-color: rgb(227, 252, 255);
+  flex-direction: column;
+}
+
+.four {
+  background-color: rgb(227, 252, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +136,6 @@ img {
 
 .button-container a {
   border: none;
-  text-decoration: none;
   background-color: rgb(169, 210, 248);
   color: white;
   text-align: center;
@@ -144,6 +161,28 @@ img {
   width: 100%;
   padding: 40px;
 }
+
+
+
+.project {
+  width: 125px;
+  height: 125px;
+  background-color: white;
+}
+
+.selected {
+  width: 150px;
+  height: 150px;
+}
+
+.project-thumbnails {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
 
 
 @keyframes lightRotate {
