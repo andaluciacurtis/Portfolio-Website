@@ -145,6 +145,44 @@ nav {
   cursor: pointer;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.wrapper i {
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 50%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .project-and-triangle {
   display: flex;
   justify-content: center;
@@ -229,6 +267,8 @@ nav {
   .hero-text {
     text-align: center;
   }
+
+  
 }
 
 @media (min-width: 501px) {
