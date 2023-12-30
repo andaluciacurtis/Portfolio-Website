@@ -1,5 +1,27 @@
-let projects = document.querySelectorAll('.project');
-let triangles = document.querySelectorAll('.triangle');
+const navBar = document.querySelector('nav');
+let observerOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const pageOneObserver = new IntersectionObserver(function(entries, navObserver) {
+  entries.forEach(entry=> {
+    if (!entry.isIntersecting) {
+      navBar.classList.add("show");
+    } else {
+      navBar.classList.remove("show");
+    }
+  })
+}, observerOptions);
+
+pageOneObserver.observe(pageOne);
+
+
+
+
+
+
+const projects = document.querySelectorAll('.project');
+const triangles = document.querySelectorAll('.triangle');
 
 for (let i = 0; i < projects.length; i++) {
   let currentProject = projects[i];
@@ -14,3 +36,4 @@ for (let i = 0; i < projects.length; i++) {
     }
   })
 }
+

@@ -61,6 +61,9 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
+
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .links {
@@ -187,9 +190,10 @@ nav {
   flex-direction: column;
 }
 
-.fake-image {
-  background-color:rgb(190, 207, 219);
+.show {
+  opacity: 100%;
 }
+
 
 
 @keyframes projectChosen {
