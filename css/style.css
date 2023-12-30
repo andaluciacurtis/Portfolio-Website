@@ -174,7 +174,7 @@ nav {
 }
 
 .project-description {
-  width: 80%;
+  width: 90vw;
   background-color: white;
   padding: 30px;
   margin-top: 20px;
@@ -188,8 +188,6 @@ nav {
 }
 
 .fake-image {
-  height: 300px;
-  width: 700px;
   background-color:rgb(190, 207, 219);
 }
 
