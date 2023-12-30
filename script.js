@@ -19,7 +19,17 @@ let isDragStart = false;
 let prevPageX;
 let prevScrollLeft;
 
+
 const carousel = document.querySelector('.carousel');
+const firstImg = carousel.querySelectorAll("img")[0];
+const arrows = document.querySelectorAll(".wrapper i");
+
+let firstImgWidth = firstImg.clientWidth;
+
+arrows.forEach(arrow=>{
+  arrow.addEventListener("click", ()=>{
+    carousel.scrollLeft += arrow.id == "left" ? -firstImgWidth : firstImgWidth;
+  })})
 
 carousel.addEventListener("mousedown", (e)=>{
   // updating global variables on mousedown event
@@ -34,8 +44,6 @@ carousel.addEventListener("mousemove", (e)=> {
   let positionDiff = e.pageX - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
 });
-
-
 
 carousel.addEventListener("mouseup", ()=>{
   isDragStart = false;
