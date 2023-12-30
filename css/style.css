@@ -137,8 +137,8 @@ nav {
 
 /* Project layout for Code and Art pages */
 .project {
-  width: 125px;
-  height: 125px;
+  height: 200px;
+  width: 200px;
 
   background-color: rgb(190, 207, 219);
   transition: width 100ms, height 100ms;
@@ -146,17 +146,34 @@ nav {
 }
 
 .wrapper {
-  display: flex;
+  max-width: 80vw;
+  position: relative;
 }
 
+
 .wrapper i {
-  padding: 10px;
-  margin: 5px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+
   background-color: white;
   border-radius: 50%;
   align-self: center;
+  text-align: center;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+.wrapper i:first-child {
+  left: -23px;
+}
+
+.wrapper i:last-child {
+  right: -23px;
+}
+
 
 .wrapper .carousel {
   white-space: nowrap;
@@ -165,8 +182,6 @@ nav {
   display: flex;
   gap: 20px;
 }
-
-
 
 
 
@@ -268,7 +283,10 @@ nav {
     text-align: center;
   }
 
-  
+  .carousel img {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 501px) {

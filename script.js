@@ -15,6 +15,25 @@ const pageOneObserver = new IntersectionObserver(function(entries, navObserver) 
 
 pageOneObserver.observe(pageOne);
 
+// let isDragStart = false;
+
+// const carousel = document.querySelector('.carousel');
+// carousel.addEventListener("mousemove", (e)=> {
+//   if (!isDragStart) return;
+//   e.preventDefault;
+//   carousel.scrollLeft = e.pageX;
+// });
+
+// carousel.addEventListener("mousedown", ()=>{
+//   isDragStart = true;
+//   prevPageX = e.pageX;
+// })
+
+// carousel.addEventListener("mouseup", ()=>{
+//   isDragStart = false;
+// })
+
+
 
 
 
