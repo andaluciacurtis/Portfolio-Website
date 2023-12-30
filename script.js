@@ -15,23 +15,31 @@ const pageOneObserver = new IntersectionObserver(function(entries, navObserver) 
 
 pageOneObserver.observe(pageOne);
 
-// let isDragStart = false;
+let isDragStart = false;
+let prevPageX;
+let prevScrollLeft;
 
-// const carousel = document.querySelector('.carousel');
-// carousel.addEventListener("mousemove", (e)=> {
-//   if (!isDragStart) return;
-//   e.preventDefault;
-//   carousel.scrollLeft = e.pageX;
-// });
+const carousel = document.querySelector('.carousel');
 
-// carousel.addEventListener("mousedown", ()=>{
-//   isDragStart = true;
-//   prevPageX = e.pageX;
-// })
+carousel.addEventListener("mousedown", (e)=>{
+  // updating global variables on mousedown event
+  isDragStart = true;
+  prevPageX = e.pageX;
+  prevScrollLeft = carousel.scrollLeft;
+})
 
-// carousel.addEventListener("mouseup", ()=>{
-//   isDragStart = false;
-// })
+carousel.addEventListener("mousemove", (e)=> {
+  if (!isDragStart) return;
+  e.preventDefault();
+  let positionDiff = e.pageX - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+});
+
+
+
+carousel.addEventListener("mouseup", ()=>{
+  isDragStart = false;
+})
 
 
 
