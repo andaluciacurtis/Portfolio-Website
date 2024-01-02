@@ -50,6 +50,8 @@ section {
   background-color: rgb(227, 252, 255);
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   scroll-snap-align: start;
 }
 
@@ -74,27 +76,6 @@ nav {
 .links a {
   color: rgb(169, 210, 248);
   font-size: 23px;
-}
-
-#pageOne {
-  justify-content: center;
-  align-items: center;
-}
-
-#pageTwo {
-  justify-content: center;
-  align-items: center;
-}
-
-#pageThree {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#pageFour {
-  justify-content: center;
-  align-items: center;
 }
 
 .hero {
@@ -135,53 +116,6 @@ nav {
   border-radius: 15px;
 }
 
-/* Project layout for Code and Art pages */
-.project {
-  height: 200px;
-  width: 200px;
-
-  background-color: rgb(190, 207, 219);
-  transition: width 100ms, height 100ms;
-  cursor: pointer;
-}
-
-.wrapper {
-  max-width: 80vw;
-  position: relative;
-}
-
-
-.wrapper i {
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-
-  background-color: white;
-  border-radius: 50%;
-  align-self: center;
-  text-align: center;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.wrapper i:first-child {
-  left: -23px;
-}
-
-.wrapper i:last-child {
-  right: -23px;
-}
-
-
-.wrapper .carousel {
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  gap: 20px;
-}
 
 
 
@@ -193,24 +127,6 @@ nav {
 
 
 
-
-
-
-
-
-.project-and-triangle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.selected {
-  width: 150px;
-  height: 150px;
-  /* animation: projectChosen 150ms; */
-}
 
 .triangle {
   height: 0;
@@ -222,29 +138,16 @@ nav {
   visibility:hidden;
 }
 
-.project-thumbnails {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  height: 150px;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
-.project-description {
-  width: 90vw;
-  background-color: white;
-  padding: 30px;
-  margin-top: 20px;
-}
-
-.project-container {
-  display: flex;
+.project {
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-
-.show {
-  opacity: 100%;
+  width: 300px;
 }
 
 
