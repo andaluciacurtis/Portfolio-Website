@@ -120,6 +120,24 @@ nav {
   border-radius: 15px;
 }
 
+.about-container {
+  background-color: white;
+  
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* PROJECTS PAGE */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -129,6 +147,9 @@ nav {
 .project {
   width: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .project-links {
