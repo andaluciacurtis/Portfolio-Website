@@ -122,18 +122,25 @@ nav {
 
 .about-container {
   background-color: white;
-  width: 50%;
+  width: min(800px, 90%);
   margin: auto;
   
   padding: 25px;
   border-radius: 15px;
   display: flex;
+  gap: 20px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  width: 70%;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
 }
 
 .skill {
