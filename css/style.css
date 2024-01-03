@@ -23,6 +23,11 @@ h2 {
   color: rgb(169, 210, 248);
 }
 
+h3 {
+  color: rgb(169, 210, 248);
+  font-size: 23px;
+}
+
 h4 {
   font-size: 15px;
 }
@@ -115,7 +120,34 @@ nav {
   border-radius: 15px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
 
+.project {
+  width: 300px;
+  text-align: center;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-links a {
+  padding: 10px;
+  background-color:rgb(169, 210, 248);
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.show {
+  opacity: 100%;
+}
 
 
 
@@ -135,22 +167,6 @@ nav {
   border-top: 0;
   border-bottom: 30px solid white;
   visibility:hidden;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.project {
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-}
-
-.show {
-  opacity: 100%;
 }
 
 
@@ -187,11 +203,14 @@ nav {
   .hero-text {
     text-align: center;
   }
-
-  .carousel img {
-    width: 100%;
+  .project img {
+    width: 150px;
+    height: 150px;
   }
 
+  .project {
+    width: 150px;
+  }
 }
 
 @media (min-width: 501px) {
@@ -203,4 +222,10 @@ nav {
   .hero-flex-container {
     align-items: center;
   }
+
+  .project-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
 }
