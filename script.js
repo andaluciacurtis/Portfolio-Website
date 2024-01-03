@@ -1,4 +1,6 @@
 const navBar = document.querySelector('nav');
+const outerContainer = document.querySelector('.outer-container');
+
 let observerOptions = {
   rootMargin: "-200px 0px 0px 0px"
 };
