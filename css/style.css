@@ -77,6 +77,10 @@ nav {
   font-size: 23px;
 }
 
+#pageOne {
+  height: 100vh;
+}
+
 .hero {
   width: min(80%, 480px);
   background-color: white;
@@ -195,41 +199,11 @@ nav {
   opacity: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-.triangle {
-  height: 0;
-  width: 0;
-
-  border: 15px solid transparent;
-  border-top: 0;
-  border-bottom: 30px solid white;
-  visibility:hidden;
-}
-
-
-@keyframes projectChosen {
-  0% {
-    width: 125px;
-    height: 125px;
-  }
-
-  90% {
-    width: 175px;
-    height: 175px;
-  }
-  100% {
-    width: 150px;
-    height: 150px;
-  }
+.contact-container {
+  padding: 30px;
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 15px;
 }
 
 @keyframes lightRotate {
@@ -242,9 +216,6 @@ nav {
 }
 
 @media (max-width: 500px) {
-  #pageOne {
-    height: 100vh;
-  }
 
   #pageTwo, #pageThree, #pageFour {
     margin-top: 30px;
@@ -260,9 +231,6 @@ nav {
 }
 
 @media (min-width: 501px) {
-  section {
-    height: 100vh;
-  }
   
   .fish-banner {
     margin-left: -90px;
