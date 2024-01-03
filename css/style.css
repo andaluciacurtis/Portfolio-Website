@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* TEXT */
@@ -24,16 +24,17 @@ h2 {
 }
 
 h3 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: rgb(169, 210, 248);
   font-size: 23px;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 img {
@@ -42,6 +43,8 @@ img {
 
 a {
   text-decoration: none;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 19px;
 }
 
 
@@ -146,6 +149,20 @@ nav {
 .skill {
   align-items: center;
   text-align: center;
+}
+
+.about-links {
+  display: flex;
+  gap: 10px;
+}
+
+.about-links a {
+  padding: 10px;
+  background-color: rgb(169, 210, 248);
+  width: 30%;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
 }
 
 /* PROJECTS PAGE */
@@ -259,6 +276,23 @@ nav {
   .project-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
 
+@media (max-width: 800px) {
+  .about-container {
+    display: grid;
+    justify-items: center;
+  }
 
+  .about-image {
+    grid-area: 1;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
