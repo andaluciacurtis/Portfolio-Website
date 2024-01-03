@@ -122,18 +122,23 @@ nav {
 
 .about-container {
   background-color: white;
+  width: 50%;
+  margin: auto;
   
   padding: 25px;
   border-radius: 15px;
   display: flex;
 }
 
-.left {
-  width: 50%;
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 70%;
 }
 
-.right {
-  width: 50%;
+.skill {
+  align-items: center;
+  text-align: center;
 }
 
 /* PROJECTS PAGE */
