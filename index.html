@@ -190,10 +190,18 @@
     
             <section class="four" id="pageFour">
                 <div class="contact-container">
-                    <h2>Contact us!</h2>
-                    <p>Your name:</p>
-                    <p>Email:</p>
-                    <p>Message:</p>
+                    
+                    <div class="contact-input-container">
+                            <form action="https://api.web3forms.com/submit" method="POST"></form>
+                            <h2>Contact me!</h2>
+                            <input type="hidden" name="access_key" value="df5fea16-7e66-493a-b90e-986a4ce70b41">
+                            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                            <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
                 </div>
             </section>
             

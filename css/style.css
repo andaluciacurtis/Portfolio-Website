@@ -199,10 +199,40 @@ nav {
 }
 
 .contact-container {
-  padding: 30px;
+  padding: 25px;
   margin-top: 40px;
-  background-color: white;
+  background-color: rgb(82, 104, 124);
   border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.contact-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-input {
+  border: 2px solid white;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.contact-input:focus {
+  border: 2px solid rgb(169, 210, 248);
+}
+
+.contact-input::placeholder {
+  color: rgb(169, 210, 248);
+}
+
+.contact-input-container button {
+  align-self: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
 }
 
 @keyframes lightRotate {
