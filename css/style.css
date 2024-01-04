@@ -88,6 +88,8 @@ nav {
   border-radius: 15px;
   position: relative;
   margin-top: 40px;
+  box-shadow: rgb(32, 60, 92) 0 0 20px;
+  z-index: 10;
 }
 
 .hero-flex-container {
@@ -119,9 +121,21 @@ nav {
   border-radius: 15px;
 }
 
+.page-one-divider {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
 /* ABOUT PAGE */
 #pageTwo {
   background-color:rgb(82, 104, 124);
+  padding-bottom: 50px;
+}
+
+.cloud-divider {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .about-container {
@@ -167,6 +181,9 @@ nav {
 }
 
 /* PROJECTS PAGE */
+#pageThree {
+  padding: 300px;
+}
 
 .project-grid {
   display: grid;
