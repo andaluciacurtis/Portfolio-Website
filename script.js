@@ -5,7 +5,7 @@ let observerOptions = {
   rootMargin: "-200px 0px 0px 0px"
 };
 
-const pageOneObserver = new IntersectionObserver(function(entries, navObserver) {
+const pageOneObserver = new IntersectionObserver(function(entries) {
   entries.forEach(entry=> {
     if (!entry.isIntersecting) {
       navBar.classList.add("show");

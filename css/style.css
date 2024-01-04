@@ -235,6 +235,41 @@ nav {
   cursor: pointer;
 }
 
+/* PROJECT SPEC PAGE */
+.project-spec {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.project-specs-container {
+  width: min(800px, 90%);
+  margin: auto;
+  
+  padding-top: 80px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-specs-container h2 {
+  text-align: center;
+}
+
+.specs-button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.important {
+  font-weight: bold;
+  color: rgb(192, 185, 255);
+}
+
 @keyframes lightRotate {
   0% {
     transform: rotate(0);
