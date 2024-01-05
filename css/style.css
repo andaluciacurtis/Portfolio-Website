@@ -385,8 +385,14 @@ nav h2 {
 /* FOOTER */
 
 footer {
-  background-color: white;
-  height: 80px;
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 20px;
+  color: var(--light-blue);
+}
+
+footer a {
+  color: var(--pink);
 }
 
 @keyframes lightRotate {
