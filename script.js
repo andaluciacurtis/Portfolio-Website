@@ -1,9 +1,4 @@
 const navBar = document.querySelector('nav');
-const outerContainer = document.querySelector('.outer-container');
-
-let observerOptions = {
-  rootMargin: "-100px 0px 0px 0px"
-};
 
 const pageOneObserver = new IntersectionObserver(function(entries) {
   entries.forEach(entry=> {
@@ -13,6 +8,27 @@ const pageOneObserver = new IntersectionObserver(function(entries) {
       navBar.classList.remove("show");
     }
   })
-}, observerOptions);
+}, 
+  {
+    rootMargin: "-100px 0px 0px 0px"
+  }
+);
 
 pageOneObserver.observe(pageOne);
+
+const pageThreeObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(entry=> {
+    if (!entry.isIntersecting) {
+      navBar.style.backgroundColor = "white";
+    } else {
+      navBar.style.backgroundColor = "var(--dark-blue)";
+    }
+  })
+}, 
+  {
+    rootMargin: "-100px 0px 0px 0px",
+    threshold: 0.5
+  }
+);
+
+pageThreeObserver.observe(pageThree);

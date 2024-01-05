@@ -6,7 +6,7 @@
 
 :root {
   --light-blue: rgb(169, 210, 248);
-  --very-light-blue: rgb(227, 252, 255);
+  --very-light-blue: rgb(221, 251, 255);
   --dark-blue: rgb(76, 106, 134);
   --pink: pink;
 }
@@ -74,7 +74,7 @@ nav {
   width: 100%;
   background-color: white;
   opacity: 0%;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, background-color 0.5s;
   z-index: 99;
 }
 
@@ -92,6 +92,11 @@ nav h2 {
   font-size: 23px;
 }
 
+.cloud-divider {
+  width: 100%;
+  margin: -1px 0;
+}
+
 /* LANDING PAGE */
 
 #pageOne {
@@ -105,7 +110,7 @@ nav h2 {
   border-radius: 15px;
   position: relative;
   margin-top: 40px;
-  outline: var(--very-light-blue);
+  outline: 6px solid var(--very-light-blue);
   z-index: 10;
 }
 
@@ -149,7 +154,6 @@ nav h2 {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  margin-bottom: -1px;
   width: 100%;
 }
 
@@ -166,9 +170,7 @@ nav h2 {
 }
 
 
-.cloud-divider {
-  width: 100%;
-}
+
 
 .about-container {
   background-color: white;
@@ -179,7 +181,8 @@ nav h2 {
   border-radius: 15px;
   display: flex;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .about-text {
@@ -215,7 +218,13 @@ nav h2 {
 
 /* PROJECTS PAGE */
 #pageThree {
-  padding: 50px 0;
+  padding: 100px 0;
+  position: relative;
+}
+
+.page-three-divider {
+  position: absolute;
+  top: 0;
 }
 
 .project-grid {
@@ -248,18 +257,24 @@ nav h2 {
   opacity: 100%;
 }
 
-.contact-container {
-  padding: 25px;
-  margin-top: 40px;
-  background-color: var(--dark-blue);
-  border-radius: 15px;
-  margin-bottom: 40px;
-}
+/* CONTACT PAGE */
 
 .contact-input-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+}
+
+.contact-container {
+  padding: 25px;
+  margin-top: 100px;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+
+  z-index: 10;
+
+  margin-bottom: 40px;
 }
 
 .contact-input {
@@ -283,6 +298,13 @@ nav h2 {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+}
+
+.contact-divider {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  margin-bottom: -130px;
 }
 
 /* PROJECT SPEC PAGE */
@@ -318,6 +340,13 @@ nav h2 {
 .important {
   font-weight: bold;
   color: var(--pink);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: white;
+  height: 80px;
 }
 
 @keyframes lightRotate {

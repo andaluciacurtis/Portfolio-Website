@@ -11,7 +11,7 @@
 <body>
     
         
-    <nav>
+    <nav class="show">
         <a href="#pageOne"><h2>Andalucia Curtis</h2></a>
         <div class="links">
             <a href="#pageTwo">About</a>
@@ -44,18 +44,24 @@
                 </div>
                 
             </div>
-
-            <img srcset="images/page_1_divider_mobile.png 600w, images/page_1_divider_desktop.png 2660w" 
-                sizes="(max-width: 800px) 600px, 2660px"  alt="Cloud divider" class="page-one-divider cloud-divider">
+            <img src="images/page-1-divider-1920w.png" 
+                 srcset="images/page-1-divider-1920w.png 1920w,
+                         images/page-1-divider-800w.png 800w"
+                 size="(max-width: 800px) 800w, 1920"
+                 alt="Cloud divider" class="page-one-divider cloud-divider">
             
         </section>
 
             <section id="pageTwo">
                 
-
                 <div class="section-container">
                     <div class="nav-spacer"></div>
-                    <img src="images/page_2_divider_top_desktop.png" alt="" class="page-two-divider cloud-divider">
+
+                    <img srcset="images/page-2-divider-top-1920w.png 1920w,
+                                 images/page-2-divider-top-800w.png 800w"
+                         size="(max-width:800px) 800w, 1920w" 
+                         alt="Cloud divider" 
+                         class="page-two-divider cloud-divider">
 
                     <div class="about-container">
                         <div class="about-text">
@@ -135,10 +141,17 @@
                 
             </section>
             
-            <img src="images/page_2_bottom_divider.png" alt="" class="cloud-divider">
+
             
-            <section class="three" id="pageThree">
+            <section id="pageThree">
+
+
                 <div class="section-container">
+                    <div class="nav-spacer"></div>
+                    <img srcset="images/page-2-divider-bottom-1920w.png 1920w, images/page-2-divider-bottom-800w.png 800w" 
+                    size="(max-width:800px) 800w, 1920w" 
+                    alt="Cloud divider" class="cloud-divider page-three-divider">
+                    
                     <h2>//Projects</h2>
                     
                     <div class="project-grid">
@@ -212,9 +225,16 @@
                     </div>
 
                 </div>
+
+                <img srcset="images/page-4-divider-bottom-1920w.png 1920w,
+                images/page-4-divider-bottom-800w.png 800w" 
+        size="(max-width:800px) 800w, 1920w" 
+        alt="Cloud divider" class="cloud-divider contact-divider">
             </section>
             
     </div>
+
+    <footer></footer>
     
     <script src="https://kit.fontawesome.com/4a90a8143b.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
