@@ -11,7 +11,7 @@ html, body {
   background-color: rgb(227, 252, 255);
 }
 
-/* TEXT */
+/* GENERAL COMPONENTS */
 h1 {
   font-size: 50px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -48,12 +48,15 @@ a {
   font-size: 19px;
 }
 
-
 section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* PAGE */
+
+/* NAV */
 
 nav {
   display: flex;
@@ -65,6 +68,7 @@ nav {
   background-color: white;
   opacity: 0%;
   transition: opacity 0.5s;
+  z-index: 99;
 }
 
 .links {
@@ -80,6 +84,8 @@ nav h2 {
   color: rgb(169, 210, 248);
   font-size: 23px;
 }
+
+/* LANDING PAGE */
 
 #pageOne {
   height: 100vh;
@@ -105,7 +111,7 @@ nav h2 {
   animation: lightRotate 2s ease-in-out infinite alternate;
 }
 
-.button-container {
+.hero-buttons {
   display: flex;
   padding-top: 10px;
   justify-content: center;
@@ -115,7 +121,7 @@ nav h2 {
   right: 0;
 }
 
-.button-container a {
+.hero-buttons a {
   border: none;
   background-color: rgb(169, 210, 248);
   color: white;
@@ -130,6 +136,7 @@ nav h2 {
   bottom: 0;
   z-index: 1;
   margin-bottom: -1px;
+  width: 100%;
 }
 
 /* ABOUT PAGE */
@@ -137,6 +144,8 @@ nav h2 {
   background-color:rgb(82, 104, 124);
   padding-bottom: 50px;
 }
+
+
 
 .cloud-divider {
   width: 100%;
@@ -186,7 +195,7 @@ nav h2 {
 
 /* PROJECTS PAGE */
 #pageThree {
-  padding: 300px;
+  padding: 50px 0;
 }
 
 .project-grid {
