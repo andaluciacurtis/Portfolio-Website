@@ -53,6 +53,7 @@ a {
   text-decoration: none;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   font-size: 19px;
+  cursor: pointer;
 }
 
 section {
@@ -244,6 +245,11 @@ nav h2 {
   gap: 5px;
 }
 
+.project-grid-container h1 {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
 .project-links {
   display: flex;
   justify-content: center;
@@ -255,6 +261,11 @@ nav h2 {
   color: white;
   font-size: 18px;
   border-radius: 15px;
+}
+
+.project-links a:hover {
+  background-color: var(--pink);
+  animation: buttonShake 300ms ease-in-out 2 alternate;
 }
 
 .show {
@@ -279,6 +290,8 @@ nav h2 {
   z-index: 10;
 
   margin-bottom: 40px;
+
+  width: min(80%, 450px);
 }
 
 .contact-input {
@@ -286,6 +299,10 @@ nav h2 {
   outline: none;
   padding: 10px;
   border-radius: 15px;
+}
+
+.contact-container textarea {
+  height: 200px;
 }
 
 .contact-input:focus {
