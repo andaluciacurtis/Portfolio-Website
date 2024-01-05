@@ -274,11 +274,14 @@ nav h2 {
 
 /* CONTACT PAGE */
 
+#pageFour {
+  position: relative;
+}
+
 .contact-input-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: relative;
 }
 
 .contact-container {
@@ -319,13 +322,20 @@ nav h2 {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  background-color: var(--light-blue);
+  color: white;
+}
+
+.contact-input-container button:hover {
+  background-color: var(--pink);
+  animation: buttonShake 300ms ease-in-out 2 alternate;
 }
 
 .contact-divider {
   position: absolute;
   z-index: 1;
   left: 0;
-  margin-bottom: -130px;
+  bottom: 0;
 }
 
 /* PROJECT SPEC PAGE */
