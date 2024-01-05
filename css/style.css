@@ -72,6 +72,10 @@ nav {
   gap: 30px;
 }
 
+nav h2 {
+  color: pink;
+}
+
 .links a {
   color: rgb(169, 210, 248);
   font-size: 23px;
@@ -88,7 +92,7 @@ nav {
   border-radius: 15px;
   position: relative;
   margin-top: 40px;
-  box-shadow: rgb(32, 60, 92) 0 0 20px;
+  outline: 10px solid rgb(227, 252, 255);
   z-index: 10;
 }
 
@@ -135,7 +139,6 @@ nav {
 
 .cloud-divider {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .about-container {
