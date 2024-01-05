@@ -130,11 +130,12 @@ nav h2 {
   width: 20%;
   border-radius: 15px;
 
-  transition: background-color 400ms;
+  transition: background-color 500ms;
 }
 
 .hero-buttons a:hover {
   background-color: pink;
+  animation: buttonShake 300ms ease-in-out 2 alternate;
 }
 
 .page-one-divider {
@@ -151,6 +152,11 @@ nav h2 {
   padding-bottom: 50px;
 }
 
+.nav-spacer {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+}
 
 
 .cloud-divider {
@@ -312,6 +318,20 @@ nav h2 {
   }
   100% {
     transform: rotate(-5deg);
+  }
+}
+
+@keyframes buttonShake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
   }
 }
 
