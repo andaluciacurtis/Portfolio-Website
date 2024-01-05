@@ -129,6 +129,12 @@ nav h2 {
   padding: 10px;
   width: 20%;
   border-radius: 15px;
+
+  transition: background-color 400ms;
+}
+
+.hero-buttons a:hover {
+  background-color: pink;
 }
 
 .page-one-divider {
@@ -310,10 +316,6 @@ nav h2 {
 }
 
 @media (max-width: 500px) {
-
-  #pageTwo, #pageThree, #pageFour {
-    margin-top: 30px;
-  }
 
   .hero-flex-container {
     flex-direction: column;
