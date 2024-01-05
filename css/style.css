@@ -4,29 +4,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-blue: rgb(169, 210, 248);
+  --very-light-blue: rgb(227, 252, 255);
+  --dark-blue: rgb(76, 106, 134);
+  --pink: pink;
+}
+
 html, body {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(227, 252, 255);
+  background-color: var(--very-light-blue);
 }
 
 /* GENERAL COMPONENTS */
 h1 {
   font-size: 50px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: rgb(169, 210, 248);
+  color: var(--light-blue);
 }
 
 h2 {
   font-size: 30px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: rgb(169, 210, 248);
+  color: var(--light-blue);
 }
 
 h3 {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: rgb(169, 210, 248);
+  color: var(--light-blue);
   font-size: 23px;
 }
 
@@ -77,11 +84,11 @@ nav {
 }
 
 nav h2 {
-  color: pink;
+  color: var(--pink);
 }
 
 .links a {
-  color: rgb(169, 210, 248);
+  color: var(--light-blue);
   font-size: 23px;
 }
 
@@ -98,7 +105,7 @@ nav h2 {
   border-radius: 15px;
   position: relative;
   margin-top: 40px;
-  outline: 10px solid rgb(227, 252, 255);
+  outline: var(--very-light-blue);
   z-index: 10;
 }
 
@@ -123,7 +130,7 @@ nav h2 {
 
 .hero-buttons a {
   border: none;
-  background-color: rgb(169, 210, 248);
+  background-color: var(--light-blue);
   color: white;
   text-align: center;
   padding: 10px;
@@ -134,7 +141,7 @@ nav h2 {
 }
 
 .hero-buttons a:hover {
-  background-color: pink;
+  background-color: var(--pink);
   animation: buttonShake 300ms ease-in-out 2 alternate;
 }
 
@@ -148,7 +155,7 @@ nav h2 {
 
 /* ABOUT PAGE */
 #pageTwo {
-  background-color:rgb(82, 104, 124);
+  background-color: var(--dark-blue);
   padding-bottom: 50px;
 }
 
@@ -172,6 +179,7 @@ nav h2 {
   border-radius: 15px;
   display: flex;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .about-text {
@@ -198,7 +206,7 @@ nav h2 {
 
 .about-links a {
   padding: 10px;
-  background-color: rgb(169, 210, 248);
+  background-color: var(--light-blue);
   width: 30%;
   border-radius: 15px;
   text-align: center;
@@ -230,7 +238,7 @@ nav h2 {
 
 .project-links a {
   padding: 10px;
-  background-color:rgb(169, 210, 248);
+  background-color:var(--light-blue);
   color: white;
   font-size: 18px;
   border-radius: 15px;
@@ -243,7 +251,7 @@ nav h2 {
 .contact-container {
   padding: 25px;
   margin-top: 40px;
-  background-color: rgb(82, 104, 124);
+  background-color: var(--dark-blue);
   border-radius: 15px;
   margin-bottom: 40px;
 }
@@ -262,11 +270,11 @@ nav h2 {
 }
 
 .contact-input:focus {
-  border: 2px solid rgb(169, 210, 248);
+  border: 2px solid var(--light-blue);
 }
 
 .contact-input::placeholder {
-  color: rgb(169, 210, 248);
+  color: var(--light-blue);
 }
 
 .contact-input-container button {
@@ -309,7 +317,7 @@ nav h2 {
 
 .important {
   font-weight: bold;
-  color: rgb(192, 185, 255);
+  color: var(--pink);
 }
 
 @keyframes lightRotate {
@@ -335,7 +343,7 @@ nav h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 615px) {
 
   .hero-flex-container {
     flex-direction: column;
@@ -346,7 +354,7 @@ nav h2 {
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 616px) {
   
   .fish-banner {
     margin-left: -90px;
