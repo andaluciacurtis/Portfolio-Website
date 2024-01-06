@@ -237,12 +237,16 @@ nav h2 {
   gap: 20px;
 }
 
+.project-grid h3 {
+  color: var(--dark-blue);
+}
+
 .project {
   width: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
 }
 
 .project-grid-container h1 {
