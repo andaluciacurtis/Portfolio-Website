@@ -72,7 +72,9 @@ section {
 .hero-buttons a, 
 .about-links a, 
 .project-links a, 
-.contact-input-container button {
+.contact-input-container button,
+.spec-links a,
+.back-button a {
   border: none;
   background-color: var(--light-blue);
   color: white;
@@ -86,7 +88,9 @@ section {
 .hero-buttons a:hover, 
 .about-links a:hover, 
 .project-links a:hover,
-.contact-input-container button:hover {
+.contact-input-container button:hover,
+.spec-links a:hover,
+.back-button a:hover {
   background-color: var(--pink);
   animation: buttonShake 300ms ease-in-out 2 alternate;
 }
@@ -373,6 +377,7 @@ nav h2:hover::after {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .project-specs-container {
@@ -388,12 +393,18 @@ nav h2:hover::after {
 
 .project-specs-container h2 {
   text-align: center;
+  color: var(--dark-blue);
 }
 
-.specs-button-container {
+.spec-links {
   display: flex;
   gap: 20px;
   justify-content: center;
+  padding: 10px;
+}
+
+.spec-links a {
+  width: 80px;
 }
 
 .important {
@@ -403,11 +414,45 @@ nav h2:hover::after {
 
 .specs-img-container {
   display: flex;
+  padding: 10px;
 }
 
 .specs-img-container img {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
+}
+
+.bottom-text {
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.back-button {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-mini-links a {
+  color: var(--light-blue);
+  position: relative;
+}
+
+.project-mini-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--pink);
+  
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.project-mini-links a:hover::after {
+  transform: scaleX(1);
 }
 
 /* FOOTER */
