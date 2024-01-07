@@ -285,11 +285,6 @@ nav h2:hover::after {
   gap: 7px;
 }
 
-.project-grid-container h1 {
-  color: var(--pink);
-  text-decoration: underline;
-}
-
 .project-links {
   display: flex;
   justify-content: center;
