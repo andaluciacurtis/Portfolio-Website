@@ -381,7 +381,7 @@ nav h2:hover::after {
 }
 
 .project-specs-container {
-  width: min(800px, 90%);
+  width: min(850px, 90%);
   margin: auto;
   
   padding-top: 80px;
@@ -412,12 +412,13 @@ nav h2:hover::after {
   color: var(--pink);
 }
 
-.specs-img-container {
+.spec-img-container {
   display: flex;
   padding: 10px;
+  justify-content: space-between;
 }
 
-.specs-img-container img {
+.spec-img-container img {
   height: 200px;
   width: 200px;
 }
@@ -565,7 +566,7 @@ footer h4 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .about-container {
     display: grid;
     justify-items: center;
@@ -573,5 +574,14 @@ footer h4 {
 
   .about-image {
     grid-area: 1;
+  }
+
+  .spec-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    width: min(450px, 90%);
+    margin: auto;
   }
 }
