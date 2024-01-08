@@ -415,12 +415,8 @@ nav h2:hover::after {
 .spec-img-container {
   display: flex;
   padding: 10px;
-  justify-content: space-between;
-}
-
-.spec-img-container img {
-  height: 200px;
-  width: 200px;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .bottom-text {
@@ -520,8 +516,25 @@ footer h4 {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 500px) {
+  nav h2 {
+    font-size: 28px;
+  }
 
+  .spec-img-container img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 501px) {
+  .spec-img-container img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 650px) {
   .hero-flex-container {
     flex-direction: column;
   }
