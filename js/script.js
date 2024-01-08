@@ -67,6 +67,5 @@ navLinks.forEach(link=> {
 function openCloseNav() {
   navOpen = !navOpen;
   mobileNav.classList.toggle("nav-show");
-  bgDimmer.style.transition = "opacity 0.5s ease-in-out";
   bgDimmer.classList.toggle("dimmer-show");
 }
