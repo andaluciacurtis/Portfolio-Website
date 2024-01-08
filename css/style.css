@@ -384,11 +384,16 @@ nav h2:hover::after {
   width: min(850px, 90%);
   margin: auto;
   
-  padding-top: 80px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 40px;
+}
+
+.project-divider {
+  margin: 40px 0 60px 0;
+  border: 1px solid var(--light-blue);
 }
 
 .project-specs-container h2 {

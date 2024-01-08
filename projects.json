@@ -17,5 +17,62 @@
     "diffAspect": "Oddly enough, it wasn’t anything about the weather API itself, but rather working with the data to get the times right for the hourly forecast container. When initializing a Date object with a Unix time, it automatically converts to the user’s local time, so I had to manually switch it using date.toLocaleString().",
     "takeAway": "Scope! As well as learning when to step away from a project and call it done. Originally, I had planned to make a section about what to wear based on the weather, where it would choose from a folder of different clothing items and randomize an outfit for the weather on an illustrated person. But as this is more of a project to practice my programming skills and not my art skills, I decided to scrap that in favor of other projects. I also initially intended to make the background animated based on the weather, such as raindrops falling in the rain theme, or bright rays on the sun theme. This, however, I may still do.",
     "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
-    }
+    },
+    {
+      "id": "weatherApp",
+      "title": "Weather App",
+      "links": [
+        "https://andaluciacurtis.github.io/Weather-App/",
+        "https://github.com/andaluciacurtis/Weather-App"
+      ],
+      "imgs": [
+        "images/weather-app/sun.PNG",
+        "images/weather-app/clouds.PNG",
+        "images/weather-app/snow.PNG",
+        "images/weather-app/icons.PNG"
+      ],
+      "desc": "This is a weather application that works with multiple APIs (OpenWeatherMapAPI and GeoDB Cities) to display the weather in a location inputted by the user. Users may type the full location in and hit enter/the search key, or they can choose from a list of suggested locations while typing. For each type of weather, a different theme is used to match. Furthermore, when first opening the app, it chooses one of these themes at random to use on the initial search page. Other features include an hourly forecast section and the ability to switch between Fahrenheit and Celsius instantly.",
+      "initialGoal": "To practice working with APIs in Javascript, as well as themes (+ theme switching) in CSS.",
+      "diffAspect": "Oddly enough, it wasn’t anything about the weather API itself, but rather working with the data to get the times right for the hourly forecast container. When initializing a Date object with a Unix time, it automatically converts to the user’s local time, so I had to manually switch it using date.toLocaleString().",
+      "takeAway": "Scope! As well as learning when to step away from a project and call it done. Originally, I had planned to make a section about what to wear based on the weather, where it would choose from a folder of different clothing items and randomize an outfit for the weather on an illustrated person. But as this is more of a project to practice my programming skills and not my art skills, I decided to scrap that in favor of other projects. I also initially intended to make the background animated based on the weather, such as raindrops falling in the rain theme, or bright rays on the sun theme. This, however, I may still do.",
+      "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
+      },
+      {
+        "id": "weatherApp",
+        "title": "Weather App",
+        "links": [
+          "https://andaluciacurtis.github.io/Weather-App/",
+          "https://github.com/andaluciacurtis/Weather-App"
+        ],
+        "imgs": [
+          "images/weather-app/sun.PNG",
+          "images/weather-app/clouds.PNG",
+          "images/weather-app/snow.PNG",
+          "images/weather-app/icons.PNG"
+        ],
+        "desc": "This is a weather application that works with multiple APIs (OpenWeatherMapAPI and GeoDB Cities) to display the weather in a location inputted by the user. Users may type the full location in and hit enter/the search key, or they can choose from a list of suggested locations while typing. For each type of weather, a different theme is used to match. Furthermore, when first opening the app, it chooses one of these themes at random to use on the initial search page. Other features include an hourly forecast section and the ability to switch between Fahrenheit and Celsius instantly.",
+        "initialGoal": "To practice working with APIs in Javascript, as well as themes (+ theme switching) in CSS.",
+        "diffAspect": "Oddly enough, it wasn’t anything about the weather API itself, but rather working with the data to get the times right for the hourly forecast container. When initializing a Date object with a Unix time, it automatically converts to the user’s local time, so I had to manually switch it using date.toLocaleString().",
+        "takeAway": "Scope! As well as learning when to step away from a project and call it done. Originally, I had planned to make a section about what to wear based on the weather, where it would choose from a folder of different clothing items and randomize an outfit for the weather on an illustrated person. But as this is more of a project to practice my programming skills and not my art skills, I decided to scrap that in favor of other projects. I also initially intended to make the background animated based on the weather, such as raindrops falling in the rain theme, or bright rays on the sun theme. This, however, I may still do.",
+        "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
+        },
+        {
+          "id": "weatherApp",
+          "title": "Weather App",
+          "links": [
+            "https://andaluciacurtis.github.io/Weather-App/",
+            "https://github.com/andaluciacurtis/Weather-App"
+          ],
+          "imgs": [
+            "images/weather-app/sun.PNG",
+            "images/weather-app/clouds.PNG",
+            "images/weather-app/snow.PNG",
+            "images/weather-app/icons.PNG"
+          ],
+          "desc": "This is a weather application that works with multiple APIs (OpenWeatherMapAPI and GeoDB Cities) to display the weather in a location inputted by the user. Users may type the full location in and hit enter/the search key, or they can choose from a list of suggested locations while typing. For each type of weather, a different theme is used to match. Furthermore, when first opening the app, it chooses one of these themes at random to use on the initial search page. Other features include an hourly forecast section and the ability to switch between Fahrenheit and Celsius instantly.",
+          "initialGoal": "To practice working with APIs in Javascript, as well as themes (+ theme switching) in CSS.",
+          "diffAspect": "Oddly enough, it wasn’t anything about the weather API itself, but rather working with the data to get the times right for the hourly forecast container. When initializing a Date object with a Unix time, it automatically converts to the user’s local time, so I had to manually switch it using date.toLocaleString().",
+          "takeAway": "Scope! As well as learning when to step away from a project and call it done. Originally, I had planned to make a section about what to wear based on the weather, where it would choose from a folder of different clothing items and randomize an outfit for the weather on an illustrated person. But as this is more of a project to practice my programming skills and not my art skills, I decided to scrap that in favor of other projects. I also initially intended to make the background animated based on the weather, such as raindrops falling in the rain theme, or bright rays on the sun theme. This, however, I may still do.",
+          "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
+          }
 ]
