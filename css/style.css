@@ -112,6 +112,10 @@ nav {
   z-index: 99;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -160,6 +164,10 @@ nav h2:hover::after {
 }
 .nav-links a:hover::after {
   transform: scaleX(1);
+}
+
+nav i { 
+  color: var(--light-blue);
 }
 
 /* LANDING PAGE */
@@ -324,6 +332,7 @@ nav h2:hover::after {
 .contact-container {
   padding: 25px;
   background-color: var(--dark-blue);
+  margin-top: -1px;
   border-radius: 15px;
 
   z-index: 10;
@@ -546,6 +555,67 @@ footer h4 {
 
   .hero-text {
     text-align: center;
+  }
+
+  nav {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav-container {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+
+    transition: height 300ms ease-in-out;
+  }
+
+  .nav-triangle {
+    width: 10px;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid var(--pink);
+    margin-left: 90px;
+  }
+
+  .nav-links {
+    background-color: var(--pink);
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: -1px;
+  }
+
+  .nav-links a {
+    color: var(--dark-blue);
+    font-size: 23px;
+  }
+
+  .mobile-bg-dimmer {
+    background-color: black;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 15;
+    opacity: 0%;
+  }
+
+  .nav-show {
+    height: 300px;
+  }
+
+  .dimmer-show {
+    opacity: 30%;
   }
 }
 

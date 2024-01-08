@@ -19,8 +19,8 @@
     "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
     },
     {
-      "id": "weatherApp",
-      "title": "Weather App",
+      "id": "weatherApp1",
+      "title": "Weather App 1",
       "links": [
         "https://andaluciacurtis.github.io/Weather-App/",
         "https://github.com/andaluciacurtis/Weather-App"
@@ -38,8 +38,8 @@
       "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
       },
       {
-        "id": "weatherApp",
-        "title": "Weather App",
+        "id": "weatherApp2",
+        "title": "Weather App 2",
         "links": [
           "https://andaluciacurtis.github.io/Weather-App/",
           "https://github.com/andaluciacurtis/Weather-App"
@@ -57,8 +57,8 @@
         "next": "Mess around more with the background animation idea! I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
         },
         {
-          "id": "weatherApp",
-          "title": "Weather App",
+          "id": "weatherApp3",
+          "title": "Weather App 3",
           "links": [
             "https://andaluciacurtis.github.io/Weather-App/",
             "https://github.com/andaluciacurtis/Weather-App"
