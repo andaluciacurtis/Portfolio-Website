@@ -287,6 +287,11 @@ nav i {
   gap: 7px;
 }
 
+.project img {
+  border: 2px solid var(--light-blue);
+  border-radius: 15px;
+}
+
 .project-links {
   display: flex;
   justify-content: center;
