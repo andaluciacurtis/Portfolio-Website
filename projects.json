@@ -61,19 +61,19 @@
           "id": "portfolioSite",
           "title": "Portfolio Site",
           "links": [
-            "https://andaluciacurtis.github.io/Weather-App/",
-            "https://github.com/andaluciacurtis/Weather-App"
+            "https://andaluciacurtis.com/",
+            "https://github.com/andaluciacurtis/Portfolio-Website"
           ],
           "imgs": [
-            "images/weather-app/sun.PNG",
-            "images/weather-app/clouds.PNG",
-            "images/weather-app/snow.PNG",
-            "images/weather-app/icons.PNG"
+            "images/portfolio-site/portfolio_prev.PNG",
+            "images/portfolio-site/mobile-nav.PNG",
+            "images/portfolio-site/about-with-nav.PNG",
+            "images/portfolio-site/projects-with-nav.PNG"
           ],
           "desc": "This is a personal portfolio website made to showcase my skills. By using the provided links in the nav, header, and footer, as well as scrolling, you’ll be able to view information about me and the projects that I have done. Moreover, the nav appears and changes colors when scrolling down, while disappearing when reaching the landing page again. On mobile, the compact nav acts in the same way, disappearing when scrolling to the top and when a new page has been selected.",
           "initialGoal": "To create a portfolio that showcases my skills while describing who I am as a person. As I am a very creative person, I wanted to take my portfolio in that direction and highlight that aspect of me, without making it feel too clunky.",
           "diffAspect": "Lining everything up correctly, especially with the dividers. I wanted each page to flow together, while also looking good by itself when the individual page link is clicked. For that reason, I took the time to line each divider up exactly, adding nav spacers and changing the nav to match the other colors so that each page looks like its own individual piece (i.e., the nav turning white to blend with the cloud, and turning blue to blend in with the sky). To make this responsive nav, I used intersection observers.",
           "takeAway": "CSS layout isn’t as daunting as it seems to be. Especially with qualities like absolute positioning, this project helped me gain a really really good grasp on it.",
-          "next": "I’d love to add my art to the same website too, in a way where both code and art projects can be showcased without clashing with one another. The next step will be to add a carousel or a dynamic grid on a page below the code."
+          "next": "I’d love to add my art to the same website too, in a way where both code and art projects can be showcased without clashing with one another. The next step will be to add a carousel or a dynamic grid on a page below the code. I would also like the images to be able to get bigger when clicked on."
           }
 ]
