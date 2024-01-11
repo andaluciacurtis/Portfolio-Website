@@ -9,7 +9,7 @@ async function generate() {
 
   let basicProjectFooter = `
   <div class="back-button">
-    <a href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
+    <a href="index.html#pageThree"><i class="fa-solid fa-arrow-left-long"></i></a>
   </div>
   <h4>Want to check out another project?</h4>
   `;
