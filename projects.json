@@ -22,14 +22,15 @@
       "id": "memoryGame",
       "title": "Memory Game",
       "links": [
-        "https://andaluciacurtis.github.io/Weather-App/",
-        "https://github.com/andaluciacurtis/Weather-App"
+        "https://andaluciacurtis.github.io/Memory-Game/",
+        "https://github.com/andaluciacurtis/Memory-Game"
       ],
       "imgs": [
-        "images/weather-app/sun.PNG",
-        "images/weather-app/clouds.PNG",
-        "images/weather-app/snow.PNG",
-        "images/weather-app/icons.PNG"
+        
+        "images/memory-game/game-screen.PNG",
+        "images/memory-game/card-assets.PNG",
+        "images/memory-game/level-select.PNG",
+        "images/memory-game/win-screen.PNG"
       ],
       "desc": "This is a memory game, where the user selects the matching cards in order to win. There is a timer and move count during a round, which helps to determine whether your score is a new high score or not. The highest scores are saved and displayed each time the user selects a new game. Furthermore, when selecting a new game, the user may choose from three different level difficulties, which increase in card amount each time.",
       "initialGoal": "To practice using listeners and Javascript conditionals to make an interactive game.",
