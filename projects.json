@@ -42,14 +42,14 @@
         "id": "calculatorApp",
         "title": "Calculator App",
         "links": [
-          "https://andaluciacurtis.github.io/Weather-App/",
-          "https://github.com/andaluciacurtis/Weather-App"
+          "https://andaluciacurtis.github.io/Calculator-App/",
+          "https://github.com/andaluciacurtis/Calculator-App"
         ],
         "imgs": [
-          "images/weather-app/sun.PNG",
-          "images/weather-app/clouds.PNG",
-          "images/weather-app/snow.PNG",
-          "images/weather-app/icons.PNG"
+          "images/calc-app/calc-app-in-use.PNG",
+          "images/calc-app/calc-light-theme.PNG",
+          "images/calc-app/calc-neon-theme.PNG",
+          "images/calc-app/calc-app-preview.PNG"
         ],
         "desc": "This is a calculator app challenge from FrontEndMentor, which supplied the original design and project spec (but the code itself is self-written). The user may press any button to form a mathematical phrase, which then will get calculated as they go along. The app also includes a theme switcher, which will change the colors of the calculator.",
         "initialGoal": "To practice working with CSS grids and user input, especially when the user input causes edge cases.",
