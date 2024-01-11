@@ -1,11 +1,12 @@
-const projectSpecContainer = document.querySelector(".project-specs-container");
-const projectPrevContainer = document.querySelector(".project-grid");
 
-generate();
+
+window.onload = generate();
 
 async function generate() {
   const response = await fetch('./projects.json');
   const data = await response.json();
+
+  const projectSpecContainer = document.querySelector(".project-specs-container");
 
   let basicProjectFooter = `
   <div class="back-button">
@@ -14,9 +15,9 @@ async function generate() {
   <h4>Want to check out another project?</h4>
   `;
   
+  let i = 1;
   data.forEach(project => {
-    let projectDiv = document.createElement("div");
-    projectDiv.id = project["id"];
+    let projectDiv = document.querySelector(`#project${i}`);
 
     let links = project["links"];
     let imgs = project["imgs"];
@@ -66,10 +67,10 @@ async function generate() {
     let otherLinks = document.createElement("div");
     otherLinks.classList.add("project-mini-links");
 
-    for (let i = 0; i < data.length; i++) {
-      if (data[i] != project) {
+    for (let j = 0; j < data.length; j++) {
+      if (j + 1 != i) {
         otherLinks.innerHTML += `
-          <a href="#${data[i]["id"]}">${data[i]["title"]}</a>
+          <a href="#project${j + 1}">${data[j]["title"]}</a>
         `;
       }
     }
@@ -81,5 +82,7 @@ async function generate() {
 
     projectDiv.appendChild(projectFooter);
     projectSpecContainer.appendChild(projectDiv);
+
+    i++;
   })
 }
