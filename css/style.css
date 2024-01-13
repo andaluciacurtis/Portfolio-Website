@@ -158,6 +158,7 @@ nav i {
 
 #pageOne {
   height: 100vh;
+  position: relative;
 }
 
 .hero {
