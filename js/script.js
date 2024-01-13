@@ -73,7 +73,6 @@ navLinks.forEach(link=> {
 function openCloseNav() {
   navOpen = !navOpen;
   mobileNav.classList.toggle("nav-show");
-  bgDimmer.classList.toggle("dimmer-show");
 }
 
 // Project page
@@ -100,7 +99,7 @@ projects.forEach(project=> {
         }
       }
 
-      spec.style.height = "600px";
+      spec.style.height = "620px";
       specOpen = true;
     }
   })

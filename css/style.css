@@ -298,6 +298,7 @@ nav i {
   height: 0px;
   width: 850px;
 
+
   overflow: hidden;
   transition: height 0.5s ease-in-out;
 
@@ -323,7 +324,7 @@ nav i {
 
 .project-spec {
   background-color: white;
-  padding: 15px;
+  padding: 30px;
   border-radius: 15px;
 }
 
@@ -370,11 +371,7 @@ nav i {
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  gap: 10px;
-}
-
-.spec-img-container img {
-  border: 2px solid var(--light-blue);
+  gap: 5px;
 }
 
 .bottom-text {
@@ -596,22 +593,8 @@ footer h4 {
     color: white;
   }
 
-  .mobile-bg-dimmer {
-    background-color: black;
-    position: fixed;
-    inset: 0 0 0 0;
-    z-index: 15;
-    opacity: 0%;
-    display: none;
-  }
-
   .nav-show {
     height: 300px;
-  }
-
-  .dimmer-show {
-    display: block;
-    opacity: 30%;
   }
 }
 
