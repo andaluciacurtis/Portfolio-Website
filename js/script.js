@@ -82,25 +82,25 @@ let specOpen = false;
 
 projects.forEach(project=> {
   let readMore = project.querySelector(".read-more");
-  let spec = project.querySelector(".project-spec");
+  let spec = project.querySelector(".outer-spec-container");
 
   readMore.addEventListener("click", ()=> {
-    let currentlyOpen = spec.style.display === "block";
+    let currentlyOpen = spec.style.height != "0px";
 
     if (currentlyOpen) {
-      spec.style.display = "none";
+      spec.style.height = "0px";
       specOpen = false;
     } else {
       // close any specs that are open
       if (specOpen) {
         for (let i = 0; i < projects.length; i++) {
           if (projects[i] != project) {
-            projects[i].querySelector(".project-spec").style.display = "none";
+            projects[i].querySelector(".outer-spec-container").style.height = "0px";
           }
         }
       }
 
-      spec.style.display = "block";
+      spec.style.height = "600px";
       specOpen = true;
     }
   })

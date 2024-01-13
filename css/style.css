@@ -291,16 +291,40 @@ nav i {
   gap: 7px;
 }
 
+.outer-spec-container {
+  display: flex;
+  flex-direction: column;
+
+  height: 0px;
+  width: 850px;
+
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+
+  margin-left: -100px;
+}
+
+.left-triangle {
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 40px solid white;
+  align-self: center;
+
+  margin-left: -350px;
+}
+
+.right-triangle {
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 40px solid white;
+  align-self: center;
+  margin-left: 300px;
+}
+
 .project-spec {
   background-color: white;
   padding: 15px;
   border-radius: 15px;
-  margin: 10px;
-  width: 850px;
-
-  display: none;
-
-  margin-left: -100px;
 }
 
 .right-project {
