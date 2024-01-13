@@ -116,6 +116,10 @@ nav {
   display: none;
 }
 
+.show {
+  opacity: 100%;
+}
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -295,31 +299,20 @@ nav i {
   display: flex;
   flex-direction: column;
 
-  height: 0px;
-  width: 850px;
-
-
+  max-height: 0px;
   overflow: hidden;
-  transition: height 0.5s ease-in-out;
-
-  margin-left: -100px;
+  transition: max-height 0.5s ease-in-out;
 }
 
-.left-triangle {
+.open-project {
+  max-height: 1000px;
+}
+
+.left-triangle, .right-triangle {
   border: 20px solid transparent;
   border-top: 0;
   border-bottom: 40px solid white;
   align-self: center;
-
-  margin-left: -350px;
-}
-
-.right-triangle {
-  border: 20px solid transparent;
-  border-top: 0;
-  border-bottom: 40px solid white;
-  align-self: center;
-  margin-left: 300px;
 }
 
 .project-spec {
@@ -328,23 +321,12 @@ nav i {
   border-radius: 15px;
 }
 
-.right-project {
-  margin-left: -430px;
-}
-
 .project img {
   border: 2px solid var(--light-blue);
   border-radius: 15px;
 }
 
-.project-links {
-  display: flex;
-  justify-content: center;
-}
 
-.show {
-  opacity: 100%;
-}
 
 .project-spec h2 {
   text-align: center;
@@ -596,6 +578,15 @@ footer h4 {
   .nav-show {
     height: 300px;
   }
+
+  .project {
+    width: 100%;
+  }
+
+  .project .intro {
+    width: 300px;
+    align-self: center;
+  }
 }
 
 @media (min-width: 651px) {
@@ -633,10 +624,6 @@ footer h4 {
     margin-top: 100px;
   }
 
-  .project-container {
-    width: 600px;
-  }
-
   .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -645,6 +632,28 @@ footer h4 {
 
   .skills {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .outer-spec-container {
+    width: 600px;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .left-triangle {
+    margin-left: -310px;
+  }
+  
+  .right-triangle {
+    margin-left: 350px;
+  }
+  
+  .right-project {
+    margin-left: -320px;
+  }
+
+  .project-spec {
+    width: 600px;
   }
 }
 
@@ -658,10 +667,6 @@ footer h4 {
     grid-area: 1;
   }
 
-  .project-spec {
-    width: 450px;
-  }
-
   .spec-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -669,5 +674,28 @@ footer h4 {
 
     width: min(450px, 90%);
     margin: auto;
+  }
+}
+
+@media (min-width: 850px) {
+  .outer-spec-container {
+    width: 830px;
+    margin-left: -100px;
+  }
+  
+  .left-triangle {
+    margin-left: -350px;
+  }
+  
+  .right-triangle {
+    margin-left: 300px;
+  }
+  
+  .right-project {
+    margin-left: -430px;
+  }
+
+  .project-spec {
+    width: 830px;
   }
 }

@@ -84,22 +84,22 @@ projects.forEach(project=> {
   let spec = project.querySelector(".outer-spec-container");
 
   readMore.addEventListener("click", ()=> {
-    let currentlyOpen = spec.style.height != "0px";
+    let currentlyOpen = spec.classList.contains("open-project")
 
     if (currentlyOpen) {
-      spec.style.height = "0px";
+      spec.classList.remove("open-project");
       specOpen = false;
     } else {
       // close any specs that are open
       if (specOpen) {
         for (let i = 0; i < projects.length; i++) {
           if (projects[i] != project) {
-            projects[i].querySelector(".outer-spec-container").style.height = "0px";
+            projects[i].querySelector(".outer-spec-container").classList.remove("open-project");
           }
         }
       }
 
-      spec.style.height = "620px";
+      spec.classList.add("open-project");
       specOpen = true;
     }
   })
