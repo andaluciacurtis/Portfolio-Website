@@ -607,6 +607,7 @@ footer h4 {
     inset: 0 0 0 0;
     z-index: 15;
     opacity: 0%;
+    display: none;
   }
 
   .nav-show {
@@ -614,6 +615,7 @@ footer h4 {
   }
 
   .dimmer-show {
+    display: block;
     opacity: 30%;
   }
 }
