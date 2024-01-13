@@ -1,12 +1,15 @@
-
-
 window.onload = generate();
 
 async function generate() {
   const response = await fetch('./projects.json');
   const data = await response.json();
 
-  const projectSpecContainer = document.querySelector(".project-specs-container");
+  const projectSpecContainers = document.querySelectorAll(".project-spec");
+
+
+
+
+
 
   let basicProjectFooter = `
   <div class="back-button">
@@ -15,15 +18,14 @@ async function generate() {
   <h4>Want to check out another project?</h4>
   `;
   
-  let i = 1;
+  let i = 0;
   data.forEach(project => {
-    let projectDiv = document.querySelector(`#project${i}`);
+    let specContainer = projectSpecContainers[i];
 
     let links = project["links"];
     let imgs = project["imgs"];
 
-    projectDiv.innerHTML = `
-      <hr class="project-divider">
+    specContainer.innerHTML = `
       <h2>${project["title"]}</h2>
 
       <div class="spec-links">
@@ -38,7 +40,7 @@ async function generate() {
         <img src="${imgs[3]}" alt="">
       </div>
 
-      <div class="project-spec">
+      <div class="project-desc">
         <p>${project["desc"]}</p>
         
         <p>
@@ -80,8 +82,8 @@ async function generate() {
     projectFooter.innerHTML = basicProjectFooter;
     projectFooter.appendChild(otherLinks);
 
-    projectDiv.appendChild(projectFooter);
-    projectSpecContainer.appendChild(projectDiv);
+    // projectDiv.appendChild(projectFooter);
+    // projectSpecContainer.appendChild(projectDiv);
 
     i++;
   })
