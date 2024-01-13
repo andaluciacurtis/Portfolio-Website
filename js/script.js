@@ -75,3 +75,33 @@ function openCloseNav() {
   mobileNav.classList.toggle("nav-show");
   bgDimmer.classList.toggle("dimmer-show");
 }
+
+// Project page
+const projects = document.querySelectorAll(".project");
+let specOpen = false;
+
+projects.forEach(project=> {
+  let readMore = project.querySelector(".read-more");
+  let spec = project.querySelector(".project-spec");
+
+  readMore.addEventListener("click", ()=> {
+    let currentlyOpen = spec.style.display === "block";
+
+    if (currentlyOpen) {
+      spec.style.display = "none";
+      specOpen = false;
+    } else {
+      // close any specs that are open
+      if (specOpen) {
+        for (let i = 0; i < projects.length; i++) {
+          if (projects[i] != project) {
+            projects[i].querySelector(".project-spec").style.display = "none";
+          }
+        }
+      }
+
+      spec.style.display = "block";
+      specOpen = true;
+    }
+  })
+})
