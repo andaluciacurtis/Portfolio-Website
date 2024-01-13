@@ -282,10 +282,29 @@ nav i {
 
 .project {
   width: 300px;
+}
+
+.project-prev {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+.project-spec {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 600px;
+  
+  display: none;
+}
+
+.right-project {
+  background-color: red;
+  margin-left: -320px;
+  opacity: 30%;
 }
 
 .project img {
@@ -370,7 +389,7 @@ nav i {
 }
 
 /* PROJECT SPEC PAGE */
-.project-spec {
+/* .project-spec {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -458,7 +477,7 @@ nav i {
 
 .project-mini-links a:hover::after {
   transform: scaleX(1);
-}
+} */
 
 /* FOOTER */
 
@@ -516,11 +535,11 @@ footer h4 {
   }
 
   50% {
-    transform: rotate(-10deg);
+    transform: rotate(-2deg);
   }
 
   100% {
-    transform: rotate(10deg);
+    transform: rotate(2deg);
   }
 }
 
