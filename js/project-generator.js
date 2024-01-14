@@ -7,21 +7,17 @@ async function generate() {
     let projectDiv = document.createElement("div");
     projectDiv.classList.add("project");
 
-    let prevImg = project["prevImg"];
     let title = project["title"];
-    let intro = project["intro"];
-
     let links = project["links"];
     let imgs = project["imgs"];
-
 
     let projectPrev = document.createElement("div");
     projectPrev.classList.add("project-prev");
 
     projectPrev.innerHTML = `
-      <img src="${prevImg}" alt="" srcset="">
+      <img src="${project["prevImg"]}" alt="" srcset="">
       <h3>${title}</h3>
-      <p class="intro">${intro}</p>
+      <p class="intro">${project["intro"]}</p>
       <h4>Read more!</h4>
       <div class="read-more">
           <i class="fa-solid fa-angle-up"></i>
@@ -41,7 +37,7 @@ async function generate() {
 
     projectSpec.innerHTML += `
       <div class="project-spec">
-        <h2>${project["title"]}</h2>
+        <h2>${title}}</h2>
 
         <div class="spec-links">
           <a href="${links[0]}">View Site</a>
