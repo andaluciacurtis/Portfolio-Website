@@ -37,7 +37,7 @@ async function generate() {
 
     projectSpec.innerHTML += `
       <div class="project-spec">
-        <h2>${title}}</h2>
+        <h2>${title}</h2>
 
         <div class="spec-links">
           <a href="${links[0]}">View Site</a>
