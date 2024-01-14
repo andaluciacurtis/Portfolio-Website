@@ -432,6 +432,9 @@ nav i {
   margin-bottom: 40px;
 
   width: min(80%, 450px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-input {
@@ -464,11 +467,10 @@ nav i {
   bottom: 0;
 }
 
-.triangle {
-  border: 15px solid transparent;
-  border-top: 0;
-  border-bottom: 30px solid var(--dark-blue);
-  margin-top: 10px;
+.contact-envelope {
+  position: absolute;
+  height: 100px;
+  top: -50px;
 }
 
 /* FOOTER */
