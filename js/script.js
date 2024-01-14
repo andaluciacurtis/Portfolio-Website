@@ -84,6 +84,8 @@ projects.forEach(project=> {
 
     if (currentlyOpen) {
       spec.classList.remove("open-project");
+      project.classList.remove("selected-project");
+
       downArrow.style.display = "block";
       upArrow.style.display = "none";
       specOpen = false;
@@ -97,11 +99,13 @@ projects.forEach(project=> {
             otherProj.querySelector(".outer-spec-container").classList.remove("open-project");
             otherProj.querySelector(".fa-angle-down").style.display = "block";
             otherProj.querySelector(".fa-angle-up").style.display = "none";
+            otherProj.classList.remove("selected-project");
           }
         }
       }
 
       spec.classList.add("open-project");
+      project.classList.add("selected-project");
       downArrow.style.display = "none";
       upArrow.style.display = "block";
       specOpen = true;

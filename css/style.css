@@ -82,7 +82,7 @@ section {
   border-radius: 15px;
   cursor: pointer;
 
-  transition: background-color 500ms;
+  transition: background-color 300ms;
 }
 
 .hero-buttons a:hover, 
@@ -91,6 +91,7 @@ section {
 .spec-links a:hover,
 .back-button a:hover {
   background-color: var(--pink);
+  color: var(--dark-blue);
 }
 
 .hero-buttons a:hover, 
@@ -289,6 +290,12 @@ nav i {
 
 .project {
   width: 300px;
+  position: inline;
+  z-index: 1;
+}
+
+.selected-project {
+  z-index: 10 !important;
 }
 
 .project-prev {
@@ -296,37 +303,6 @@ nav i {
   display: flex;
   flex-direction: column;
   gap: 7px;
-}
-
-.outer-spec-container {
-  display: flex;
-  flex-direction: column;
-
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-
-.open-project {
-  max-height: 1000px;
-}
-
-.left-triangle, .right-triangle {
-  border: 15px solid transparent;
-  border-top: 0;
-  border-bottom: 30px solid white;
-  align-self: center;
-}
-
-.project-spec {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-}
-
-.project img {
-  border: 2px solid var(--light-blue);
-  border-radius: 15px;
 }
 
 .read-more {
@@ -368,6 +344,38 @@ nav i {
   background-color: var(--dark-blue);
 }
 
+.outer-spec-container {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.open-project {
+  max-height: 1000px;
+}
+
+.left-triangle, .right-triangle {
+  border: 15px solid transparent;
+  border-top: 0;
+  border-bottom: 30px solid white;
+  align-self: center;
+}
+
+.project-spec {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.project img {
+  border: 2px solid var(--light-blue);
+  border-radius: 15px;
+}
+
 .project-spec h2 {
   text-align: center;
   color: var(--dark-blue);
@@ -375,9 +383,8 @@ nav i {
 
 .spec-links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
-  padding: 10px;
 }
 
 .spec-links a {
