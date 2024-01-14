@@ -71,7 +71,6 @@ section {
 
 .hero-buttons a, 
 .about-links a, 
-.project-links a, 
 .contact-input-container button,
 .spec-links a,
 .back-button a {
@@ -81,17 +80,21 @@ section {
   text-align: center;
   padding: 10px;
   border-radius: 15px;
+  cursor: pointer;
 
   transition: background-color 500ms;
 }
 
 .hero-buttons a:hover, 
 .about-links a:hover, 
-.project-links a:hover,
 .contact-input-container button:hover,
 .spec-links a:hover,
 .back-button a:hover {
   background-color: var(--pink);
+}
+
+.hero-buttons a:hover, 
+.contact-input-container button:hover {
   animation: buttonShake 300ms ease-in-out 2 alternate;
 }
 
@@ -309,9 +312,9 @@ nav i {
 }
 
 .left-triangle, .right-triangle {
-  border: 20px solid transparent;
+  border: 15px solid transparent;
   border-top: 0;
-  border-bottom: 40px solid white;
+  border-bottom: 30px solid white;
   align-self: center;
 }
 
@@ -326,7 +329,44 @@ nav i {
   border-radius: 15px;
 }
 
+.read-more {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
+.read-more i {
+  position: absolute;
+  font-size: 20px;
+  padding: 4px 15px;
+  border-radius: 15px;
+}
+
+.fa-angle-down {
+  color: var(--pink);
+  background-color: var(--dark-blue);
+  display: block;
+  transition: background-color 300ms ease-in-out;
+}
+
+.fa-angle-down:hover {
+  background-color: var(--pink);
+  color: var(--dark-blue);
+}
+
+.fa-angle-up {
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  display: none;
+  transition: background-color 300ms ease-in-out;
+}
+
+.fa-angle-up:hover {
+  color: var(--pink);
+  background-color: var(--dark-blue);
+}
 
 .project-spec h2 {
   text-align: center;
@@ -354,17 +394,6 @@ nav i {
   padding: 10px;
   justify-content: space-around;
   gap: 5px;
-}
-
-.bottom-text {
-  text-align: center;
-  color: var(--dark-blue);
-}
-
-.back-button {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 /* CONTACT PAGE */
@@ -641,11 +670,11 @@ footer h4 {
   }
   
   .left-triangle {
-    margin-left: -310px;
+    margin-left: -320px;
   }
   
   .right-triangle {
-    margin-left: 350px;
+    margin-left: 340px;
   }
   
   .right-project {
@@ -684,11 +713,11 @@ footer h4 {
   }
   
   .left-triangle {
-    margin-left: -350px;
+    margin-left: -330px;
   }
   
   .right-triangle {
-    margin-left: 300px;
+    margin-left: 330px;
   }
   
   .right-project {
