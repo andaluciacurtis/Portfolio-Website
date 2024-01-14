@@ -18,9 +18,7 @@ const pageOneObserver = new IntersectionObserver(function(entries) {
     }
   })
 }, 
-  {
-    rootMargin: "-100px 0px 0px 0px"
-  }
+  {rootMargin: "-100px 0px 0px 0px"}
 );
 
 pageOneObserver.observe(pageOne);
@@ -34,10 +32,7 @@ const pageThreeObserver = new IntersectionObserver(function(entries) {
     }
   })
 }, 
-  {
-    rootMargin: "-100px 0px 0px 0px",
-    threshold: 0.3
-  }
+  {rootMargin: "-100px 0px 0px 0px", threshold: 0.3}
 );
 
 pageThreeObserver.observe(pageThree);
@@ -69,46 +64,56 @@ function openCloseNav() {
 }
 
 // Project page
-const projects = document.querySelectorAll(".project");
-let specOpen = false;
+const projectGrid = document.querySelector(".project-grid");
+generate().then(setUpListeners);
 
-projects.forEach(project=> {
-  let readMore = project.querySelector(".read-more");
-  let spec = project.querySelector(".outer-spec-container");
-
-  let downArrow = project.querySelector(".fa-angle-down");
-  let upArrow = project.querySelector(".fa-angle-up");
-
-  readMore.addEventListener("click", ()=> {
-    let currentlyOpen = spec.classList.contains("open-project")
-
-    if (currentlyOpen) {
-      spec.classList.remove("open-project");
-      project.classList.remove("selected-project");
-
-      downArrow.style.display = "block";
-      upArrow.style.display = "none";
-      specOpen = false;
-
-    } else {
-      // close any specs that are open
-      if (specOpen) {
-        for (let i = 0; i < projects.length; i++) {
-          if (projects[i] != project) {
-            let otherProj = projects[i];
-            otherProj.querySelector(".outer-spec-container").classList.remove("open-project");
-            otherProj.querySelector(".fa-angle-down").style.display = "block";
-            otherProj.querySelector(".fa-angle-up").style.display = "none";
-            otherProj.classList.remove("selected-project");
+function setUpListeners() {
+  const projects = document.querySelectorAll(".project");
+  let specOpen = false;
+  
+  projects.forEach(project=> {
+    let readMore = project.querySelector(".read-more");
+    let spec = project.querySelector(".outer-spec-container");
+  
+    let downArrow = project.querySelector(".fa-angle-down");
+    let upArrow = project.querySelector(".fa-angle-up");
+  
+    readMore.addEventListener("click", ()=> {
+      let currentlyOpen = spec.classList.contains("open-project")
+  
+      if (currentlyOpen) {
+        spec.classList.remove("open-project");
+        project.classList.remove("selected-project");
+  
+        downArrow.style.display = "block";
+        upArrow.style.display = "none";
+        specOpen = false;
+  
+      } else {
+        // close any specs that are open
+        if (specOpen) {
+          for (let i = 0; i < projects.length; i++) {
+            if (projects[i] != project) {
+              let otherProj = projects[i];
+              otherProj.querySelector(".outer-spec-container").classList.remove("open-project");
+              otherProj.querySelector(".fa-angle-down").style.display = "block";
+              otherProj.querySelector(".fa-angle-up").style.display = "none";
+              otherProj.classList.remove("selected-project");
+            }
           }
         }
+  
+        spec.classList.add("open-project");
+        project.classList.add("selected-project");
+        downArrow.style.display = "none";
+        upArrow.style.display = "block";
+        specOpen = true;
       }
-
-      spec.classList.add("open-project");
-      project.classList.add("selected-project");
-      downArrow.style.display = "none";
-      upArrow.style.display = "block";
-      specOpen = true;
-    }
+    })
   })
-})
+  
+}
+
+
+
+

@@ -1,7 +1,8 @@
 [
   {
-    "id": "weatherApp",
     "title": "Weather App",
+    "prevImg": "images/weather-app/weather-app-prev.PNG",
+    "intro": "Personal project involving multiple APIs and weather-dependent themes/graphic design.",
     "links": [
       "https://andaluciacurtis.github.io/Weather-App/",
       "https://github.com/andaluciacurtis/Weather-App"
@@ -19,8 +20,9 @@
     "next": "Try adding background animations, like raindrops and snowflakes, because I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
     },
     {
-      "id": "memoryGame",
       "title": "Memory Game",
+      "prevImg": "images/memory-game/game-screen.PNG",
+      "intro": "Personal project involving CSS animations, JS game programming, and graphic design.",
       "links": [
         "https://andaluciacurtis.github.io/Memory-Game/",
         "https://github.com/andaluciacurtis/Memory-Game"
@@ -39,8 +41,9 @@
       "next": "This is a redo of an older project, so I was able to accomplish the steps I wanted to take next already (the main one being the card’s flipping animation). If I were to continue this project even further, I would increase the scope. The new app would have multiple mini games available that you could choose from, and each would have a similar carnival theme to this one. Adding a leaderboard would also be fun to try."
       },
       {
-        "id": "calculatorApp",
         "title": "Calculator App",
+        "prevImg": "images/calc-app/calc-app-preview.PNG",
+        "intro": "Project from FrontEndMentor involving CSS grid, JS, and theme switching.",
         "links": [
           "https://andaluciacurtis.github.io/Calculator-App/",
           "https://github.com/andaluciacurtis/Calculator-App"
@@ -58,8 +61,9 @@
         "next": "It would be interesting to add other functions on the calculator, such as trigonometry or square roots. I would also use JSON to save the data, so that when the user opens the app again, the calculator keeps the current phrase and chosen theme."
         },
         {
-          "id": "portfolioSite",
           "title": "Portfolio Site",
+          "prevImg": "images/portfolio-site/portfolio_prev.PNG",
+          "intro": "Personal project involving layout skills and intersection observers.",
           "links": [
             "https://andaluciacurtis.com/",
             "https://github.com/andaluciacurtis/Portfolio-Website"
