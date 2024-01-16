@@ -446,6 +446,11 @@ nav i {
 
 .contact-container textarea {
   height: 200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container input {
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-input:focus {
