@@ -442,17 +442,15 @@ nav i {
   outline: none;
   padding: 10px;
   border-radius: 15px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
 }
 
 .contact-container textarea {
   height: 200px;
-  font-family: 'Poppins', sans-serif;
-}
 
-.contact-container input {
-  font-family: 'Poppins', sans-serif;
 }
-
 .contact-input:focus {
   border: 2px solid var(--light-blue);
 }
