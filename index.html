@@ -167,8 +167,6 @@
             <img srcset="images/page-2-divider-bottom-1920w.png 1920w, images/page-2-divider-bottom-800w.png 800w"
                 size="(max-width:800px) 800w, 1920w" alt="Cloud divider" class="cloud-divider page-three-divider">
 
-
-
             <div class="project-grid-container">
                 <h1>Projects</h1>
                 <div class="project-grid"></div>
@@ -184,14 +182,15 @@
 
         <div class="contact-container">
             <img src="images/envelope.png" alt="" class="contact-envelope">
-            <div class="contact-input-container">
-                <h2>Contact me!</h2>
-                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
-                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
-                <button type="submit">Submit</button>
+                <form action="https://formsubmit.co/contact@andaluciacurtis.com" method="POST" class="contact-input-container">
+
+                    <h2>Contact me!</h2>
+                    <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                    <button type="submit">Submit</button>
+
                 </form>
-            </div>
 
         </div>
 
@@ -209,7 +208,7 @@
             <a href="#pageThree">Projects</a>
             <a href="#pageFour">Contact</a>
         </div>
-        <h4>Seattle, WA | andalucia.curtis@gmail.com</h4>
+        <h4>Seattle, WA | contact@andaluciacurtis.com</h4>
     </footer>
 
     <script src="https://kit.fontawesome.com/4a90a8143b.js" crossorigin="anonymous"></script>
