@@ -473,7 +473,6 @@ nav i {
 .contact-envelope {
   position: absolute;
   height: 100px;
-  top: -60px;
 }
 
 /* FOOTER */
@@ -549,12 +548,21 @@ footer h4 {
     height: 150px;
     width: 150px;
   }
+
+  .contact-envelope {
+    top: -75px;
+  }
+  
 }
 
 @media (min-width: 501px) {
   .spec-img-container img {
     height: 200px;
     width: 200px;
+  }
+
+  .contact-envelope {
+    top: -60px;
   }
 }
 
