@@ -41,7 +41,7 @@ async function generate() {
 
         <div class="spec-links">
           <a href="${links[0]}">View Site</a>
-          <a href="${links[1]}">GitHub</a>
+          <a href="${links[1]}">Code</a>
         </div>
 
         <div class="spec-img-container">

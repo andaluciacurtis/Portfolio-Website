@@ -4,8 +4,8 @@
     "prevImg": "images/weather-app/weather-app-prev.PNG",
     "intro": "Personal project involving multiple APIs and weather-dependent themes/graphic design.",
     "links": [
-      "/weather-app.html",
-      "https://github.com/andaluciacurtis/Weather-App"
+      "https://andaluciacurtis-weather-app.glitch.me/",
+      "https://glitch.com/edit/#!/andaluciacurtis-weather-app"
     ],
     "imgs": [
       "images/weather-app/sun.PNG",
@@ -15,7 +15,7 @@
     ],
     "desc": "This is a weather application that works with multiple APIs (OpenWeatherMapAPI and GeoDB Cities) to display the weather in a location inputted by the user. Users may type the full location in and hit enter/the search key, or they can choose from a list of suggested locations while typing. For each type of weather, a different theme is applied to match. Other features include an hourly forecast section and the ability to switch between Fahrenheit and Celsius instantly.",
     "initialGoal": "To practice working with APIs in Javascript, as well as themes (+ theme switching) in CSS.",
-    "diffAspect": "Working with the given data to get the times right for the hourly forecast container. When initializing a Date object with a Unix time, it automatically converts to the user’s local time, so I had to manually switch it using date.toLocaleString().",
+    "diffAspect": "In order to get the live site working correctly (and in order to make sure I could access the API keys while still keeping them hidden), I had to build a server for the project. I worked with NodeJS and Express on the website Glitch, and ended up learning a ton about server-side JS vs client-side JS.",
     "takeAway": "Scope! As well as learning when to step away from a project and call it done. Originally, I had planned to make a section about what to wear based on the weather, where it would randomize an outfit for the weather on an illustrated person. But since this is a project to practice my programming skills and not my art skills, and the time could be used more effectively for other aspects, I scrapped it.",
     "next": "Try adding background animations, like raindrops and snowflakes, because I very much enjoy combining art and programming in applications like this. I would also like to look into a different API to search for cities, as GeoDB Cities only allows one call per second (and thus the search bar is slow due to debouncing for that condition)."
     },
